@@ -1,10 +1,9 @@
 // Scroll to section smoothly
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+    document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+

@@ -2,48 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Abiram Krishna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Project</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <nav class="nav-list">
-      <a href="#hello">Hello</a>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="navbar">
+      <div class="logo">Final Project</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
-  <section id="hello" class="hero">
-    <div class="hero-text">
-      <h1>Hi, I'm Abiram Krishna.</h1>
-      <p>Creative director & content creator.</p>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Website</h1>
+      <p>Your gateway to innovative solutions.</p>
+      <a href="#contact" class="btn">Get Started</a>
     </div>
   </section>
-  <section id="work" class="section">
-    <h2>Work</h2>
-    <div class="bullet-list">
-      <ul>
-        <li>3× Design awards</li>
-        <li>Interactive branding & motion</li>
-        <li>Clients include Adobe, Xbox, etc.</li>
-      </ul>
+
+  <section id="features" class="section">
+    <h2>Features</h2>
+    <div class="cards">
+      <div class="card">Speed</div>
+      <div class="card">Design</div>
+      <div class="card">Support</div>
     </div>
   </section>
+
   <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>Over 10 years in design, storytelling, and creative direction.</p>
+    <h2>About Us</h2>
+    <p>We’re a team passionate about creating great experiences for users around the world.</p>
   </section>
+
   <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:abiram@example.com">abiram@example.com</a></p>
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
-  <footer>© 2025 Abiram Krishna</footer>
-  <script src="script.js"></script>
+
+  <footer>
+    <p>&copy; 2025 Final Project. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
 
 
 

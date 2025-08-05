@@ -1,14 +1,10 @@
-// Smooth scroll for internal navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
     e.preventDefault();
-
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){ t.scrollIntoView({behavior:'smooth'}); }
   });
 });
+
+
 
